@@ -70,7 +70,7 @@
             <li>
               <button
                 type="button"
-                @click="toTheSection(3150, 'PRICING')"
+                @click="toTheSection(3170, 'PRICING')"
                 :class="{
                   'bg-red-600 text-white rounded-full': activeTab === 'PRICING',
                 }"
@@ -158,9 +158,8 @@ export default {
     },
     toTheSection(scroll, tabName) {
       this.activeTab = tabName;
-      window.scrollTo({ top: scroll, behavior: "instant" });
-      // document.body.scrollTop = scroll;
-      document.documentElement.scrollTop = scroll;
+      window.scrollTo({ top: scroll, block: "center", behavior: "smooth" });
+      document.documentElement.scrollIntoView = scroll;
     },
     handleScroll() {
       if (window.scrollY > 0) {
