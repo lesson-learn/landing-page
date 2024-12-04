@@ -534,9 +534,8 @@ export default {
   },
   methods: {
     toTheSection(scroll) {
-      window.scrollTo({ top: scroll, behavior: "smooth" });
-      document.body.scrollTop = scroll;
-      document.documentElement.scrollTop = scroll;
+      window.scrollTo({ top: scroll, block: "center", behavior: "smooth" });
+      document.documentElement.scrollIntoView = scroll;
     },
     handleScroll() {
       if (window.scrollY > 0) {
