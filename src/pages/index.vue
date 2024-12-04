@@ -65,7 +65,6 @@
       <div
         class="relative max-w-screen-xl px-4 sm:px-2 mx-auto grid grid-cols-12 gap-x-6"
       >
-        <!-- <LandingTradingToolImage class="sm:hidden" /> -->
         <div
           data-aos="fade-right"
           class="col-span-12 lg:col-span-6 space-y-8 sm:space-y-6 px-4 sm:px-6 mt-8"
